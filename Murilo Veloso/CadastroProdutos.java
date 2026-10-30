@@ -22,7 +22,7 @@ class Produto {
 
     @Override
     public String toString() {
-        return "ID: " + id + " | Nome: " + nome + " | Preço: " + String.format(Locale.US, "%.2f", preco);
+        return "ID: " + id + " | Nome: " + nome + " | Preço: " + String.format("%.2f", preco);
     }
 }
 
@@ -31,7 +31,7 @@ public class CadastroProdutos {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        scanner.useLocale(Locale.US); 
+ 
         
         int opcao = -1;
 
